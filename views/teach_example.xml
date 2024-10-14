@@ -1,0 +1,51 @@
+<odoo>
+    <data>
+        <!-- Tree View Definition -->
+        <record id="view_teach_example_tree" model="ir.ui.view">
+            <field name="name">teach_example.tree</field>
+            <field name="model">teach_example</field>
+            <field name="arch" type="xml">
+                <tree string="Input Mask Tree View">
+                    <field name="teach_example"/>
+                    <field name="name_teach"/>
+                    <field name="subtitle"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Form View Definition -->
+        <record id="view_teach_example_form" model="ir.ui.view">
+            <field name="name">teach_example.form</field>
+            <field name="model">teach_example</field>
+            <field name="arch" type="xml">
+                <form string="Input Mask Form View">
+                    <group>
+                        <field name="teach_example"/>
+                        <field name="name_teach"/>
+                        <field name="subtitle"/>
+                    </group>
+                </form>
+            </field>
+
+        </record>
+        <record id="action_teach_example_model" model="ir.actions.act_window">
+            <field name="name">Teach example</field>
+            <field name="res_model">teach_example</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_teach_example_tree"/>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Yangi ma'lumotlar qo'shish uchun "Yangi" tugmasini bosing.
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="menu_teach_example_main"
+                  name="Teach Example"
+                  parent="menu_your_model_main"
+                  action="action_teach_example_model"
+                  sequence="10"/>
+
+
+    </data>
+</odoo>
