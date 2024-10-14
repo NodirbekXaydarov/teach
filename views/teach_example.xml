@@ -8,7 +8,6 @@
                 <tree string="Input Mask Tree View">
                     <field name="teach_example"/>
                     <field name="name_teach"/>
-                    <field name="subtitle"/>
                 </tree>
             </field>
         </record>
