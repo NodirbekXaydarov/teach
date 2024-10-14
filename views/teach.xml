@@ -5,9 +5,9 @@
             <field name="name">teach.tree</field>
             <field name="model">teach</field>
             <field name="arch" type="xml">
-                <tree string="Input Mask Tree View">
-                    <field name="name_teach"/>
-                    <field name="subtitle"/>
+                <tree string="Teach example Tree View">
+                    <field name="name_teacher"/>
+                    <field name="family_name_teacher"/>
                 </tree>
             </field>
         </record>
@@ -17,10 +17,18 @@
             <field name="name">teach.form</field>
             <field name="model">teach</field>
             <field name="arch" type="xml">
-                <form string="Input Mask Form View">
+                <form string="Teach example Form View">
                     <group>
-                        <field name="name_teach"/>
-                        <field name="subtitle"/>
+                        <field name="name_teacher"/>
+                        <field name="family_name_teacher"/>
+                    </group>
+                    <group>
+                        <field name="student_ids">
+                            <tree string="Students">
+                                <field name="name_student"/>
+                                <field name="family_name_student"/>
+                            </tree>
+                        </field>
                     </group>
                 </form>
             </field>
@@ -37,6 +45,6 @@
                 </p>
             </field>
         </record>
-        <menuitem id="menu_your_model_main"  name="Teach" action="action_teach_model" sequence="10"/>
+        <menuitem id="menu_your_model_main" name="Teacher" action="action_teach_model" sequence="10"/>
     </data>
 </odoo>

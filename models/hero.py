@@ -4,5 +4,7 @@ class Teach(models.Model):
     _name = 'teach'
     _description = 'Teach for odoo'
 
-    name_teach = fields.Char(string='Name Char')
-    subtitle = fields.Char(string='Short Description')
+    name_teacher = fields.Char(string='Teacher name')
+    family_name_teacher = fields.Char(string='Teacher family name')
+
+    student_ids = fields.One2many('teach_example', 'teacher_id', string='Students')
