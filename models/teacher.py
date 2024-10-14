@@ -8,3 +8,4 @@ class Teacher(models.Model):
     family_name_teacher = fields.Char(string='Teacher family name')
 
     student_ids = fields.One2many('student', 'teacher_id', string='Students')
+    get_data = fields.Char(string='Get data')

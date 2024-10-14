@@ -33,11 +33,11 @@ Long description of module's purpose
     ],
     "assets": {
         "web.assets_backend": [
-            "input_mask/static/src/xml/**/*.xml",
-            "input_mask/static/src/js/**/*.js",
-            "input_mask/static/src/js/*.js",
-            "input_mask/static/src/css/*.css",
-            "input_mask/static/src/css/**/*.css"
+            "teach/static/src/xml/**/*.xml",
+            "teach/static/src/js/**/*.js",
+            "teach/static/src/js/*.js",
+            "teach/static/src/css/*.css",
+            "teach/static/src/css/**/*.css"
         ]
     },
 }

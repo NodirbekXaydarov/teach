@@ -1,0 +1,17 @@
+<template>
+    <t t-name="teach.get_teacher">
+        <div class="container">
+            <h2>Teacher List</h2>
+            <t t-if="state.teachers.length">
+                <ul>
+                    <li t-foreach="state.teachers" t-as="teacher" t-key="teacher.name">
+                        <span><t t-esc="teacher.name"/> <t t-esc="teacher.family_name"/></span>
+                    </li>
+                </ul>
+            </t>
+            <t t-else="">
+                <p>No teachers available.</p>
+            </t>
+        </div>
+    </t>
+</template>

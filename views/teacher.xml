@@ -21,12 +21,14 @@
                     <group>
                         <field name="name_teacher"/>
                         <field name="family_name_teacher"/>
+                        <field name="get_data" widget="get_teacher"/>
                     </group>
                     <group>
                         <field name="student_ids">
                             <tree string="Students">
                                 <field name="name_student"/>
                                 <field name="family_name_student"/>
+
                             </tree>
                         </field>
                     </group>
