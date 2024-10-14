@@ -1,4 +1,4 @@
 # -*- coding: utf-8 -*-
 
-from . import hero
-from . import teach_eample
+from . import teacher
+from . import student

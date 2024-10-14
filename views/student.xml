@@ -1,11 +1,11 @@
 <odoo>
     <data>
         <!-- Tree View Definition -->
-        <record id="view_teach_example_tree" model="ir.ui.view">
+        <record id="view_student_tree" model="ir.ui.view">
             <field name="name">teach_example.tree</field>
-            <field name="model">teach_example</field>
+            <field name="model">student</field>
             <field name="arch" type="xml">
-                <tree string="Teach example Tree View">
+                <tree string="Student example Tree View">
                     <field name="name_student"/>
                     <field name="family_name_student"/>
                 </tree>
@@ -13,11 +13,11 @@
         </record>
 
         <!-- Form View Definition -->
-        <record id="view_teach_example_form" model="ir.ui.view">
-            <field name="name">teach_example.form</field>
-            <field name="model">teach_example</field>
+        <record id="view_student_form" model="ir.ui.view">
+            <field name="name">student.form</field>
+            <field name="model">student</field>
             <field name="arch" type="xml">
-                <form string="Teach example Form View">
+                <form string="Student Form View">
                     <group>
                         <field name="name_student"/>
                         <field name="family_name_student"/>
@@ -30,10 +30,10 @@
 
         </record>
         <record id="action_teach_example_model" model="ir.actions.act_window">
-            <field name="name">Teach example</field>
-            <field name="res_model">teach_example</field>
+            <field name="name">Student example</field>
+            <field name="res_model">student</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="view_teach_example_tree"/>
+            <field name="view_id" ref="view_student_tree"/>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">
                     Yangi ma'lumotlar qo'shish uchun "Yangi" tugmasini bosing.
