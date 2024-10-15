@@ -24,7 +24,8 @@
                         <field name="teacher_id"/>
                         <field name="teacher_name"/>
                         <field name="teacher_family_name"/>
-                    </group>
+                        <button string="Report" type="object" name="action_generate_report"
+                                class="btn-primary"/></group>
                 </form>
             </field>
 
