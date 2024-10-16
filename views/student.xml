@@ -26,6 +26,8 @@
                         <field name="teacher_name"/>
                         <field name="teacher_family_name"/>
                         <field name="gender" widget="gender_radio"/>
+<!--                        <field name="file_upload" widget="RpcDragFile" />-->
+
                         <button string="Report" type="object" name="action_generate_report"
                                 class="btn-primary"/></group>
                 </form>

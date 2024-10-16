@@ -19,6 +19,6 @@ class Student(models.Model):
         ('divided', 'Divided')
     ], string='Gender')
     img_upload = fields.Binary(string='Image Upload')
-
+    file_upload = fields.Json(string='File Upload', default=[])
     def action_generate_report(self):
         return self.env.ref('teach.property_report').report_action(self)
