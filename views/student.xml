@@ -20,10 +20,12 @@
                 <form string="Student Form View">
                     <group>
                         <field name="name_student"/>
+                        <field name="img_upload" widget="avatar_img_upload"/>
                         <field name="family_name_student"/>
                         <field name="teacher_id"/>
                         <field name="teacher_name"/>
                         <field name="teacher_family_name"/>
+                        <field name="gender" widget="gender_radio"/>
                         <button string="Report" type="object" name="action_generate_report"
                                 class="btn-primary"/></group>
                 </form>

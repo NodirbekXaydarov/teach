@@ -1,5 +1,6 @@
 from odoo import models, fields
 
+
 class Student(models.Model):
     _name = 'student'
     _description = 'student for teach'
@@ -12,6 +13,12 @@ class Student(models.Model):
 
     teacher_name = fields.Char(related='teacher_id.name_teacher', string="Teacher's First Name", store=True)
     teacher_family_name = fields.Char(related='teacher_id.family_name_teacher', string="Teacher's Last Name", store=True)
+    gender = fields.Selection([
+        ('female', 'Female'),
+        ('male', 'Male'),
+        ('divided', 'Divided')
+    ], string='Gender')
+    img_upload = fields.Binary(string='Image Upload')
 
     def action_generate_report(self):
         return self.env.ref('teach.property_report').report_action(self)
