@@ -5,7 +5,7 @@
             <field name="name">teach_example.tree</field>
             <field name="model">student</field>
             <field name="arch" type="xml">
-                <tree string="Student example Tree View">
+                <tree string="Student example Tree View" js_class="ResCompanyInheritDashboard">
                     <field name="name_student"/>
                     <field name="family_name_student"/>
                 </tree>
