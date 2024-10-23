@@ -1,5 +1,5 @@
 <templates xml:space="preserve">
-  <t t-name="style_timetable.resCompany">
+  <t t-name="teach.Student">
     <div class="o_list_renderer o_renderer table-responsive" t-att-class="uniqueRendererClass" tabindex="-1" t-ref="root">
         <div class="w-100" style="padding: 15px;">
             <div class="d-flex custom-statistics align-items-center justify-content-between gap-4 flex-wrap">
