@@ -2,9 +2,9 @@
 
 import {registry} from "@web/core/registry";
 import {listView} from "@web/views/list/list_view";
-import {ResCompany} from "./teachClass.js";
+import {TeachStudent} from "@teach/js/widget/studentClass";
 
 registry.category("views").add("ResCompanyInheritDashboard", {
   ...listView,
-  Renderer: ResCompany
+  Renderer: TeachStudent
 });
