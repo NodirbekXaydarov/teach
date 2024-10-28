@@ -1,0 +1,8 @@
+<templates id="template" xml:space="preserve">
+    <t t-name="teach.FirstChart">
+        <div>
+            <h2>Chart</h2>
+            <div id="chart" class="tw-w-[1200px]" t-ref="chart"></div>
+        </div>
+    </t>
+</templates>

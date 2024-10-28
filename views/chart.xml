@@ -1,0 +1,43 @@
+<odoo>
+    <data>
+        <record id="view_chart_tree" model="ir.ui.view">
+            <field name="name">Chart.tree</field>
+            <field name="model">chart</field>
+            <field name="arch" type="xml">
+                <tree string="Student example Tree View">
+                    <field name="chart"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_chart_form" model="ir.ui.view">
+            <field name="name">Chart.form</field>
+            <field name="model">chart</field>
+            <field name="arch" type="xml">
+                <form string="Student Form View">
+                    <group>
+                        <field name="chart"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_chart" model="ir.actions.act_window">
+            <field name="name">Chart example</field>
+            <field name="res_model">chart</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_chart_tree"/>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Yangi ma'lumotlar qo'shish uchun "Yangi" tugmasini bosing.
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="menu_chart_main"
+                  name="Chart"
+                  parent="menu_teacher"
+                  action="action_chart"
+                  sequence="10"/>
+    </data>
+</odoo>

@@ -22,12 +22,15 @@
                         <field name="name_student"/>
                         <field name="img_upload" widget="avatar_img_upload"/>
                         <field name="family_name_student"/>
-                        <field name="teacher_id"/>
-                        <field name="teacher_name"/>
-                        <field name="teacher_family_name"/>
-                        <field name="gender" widget="gender_radio"/>
+<!--                        <field name="teacher_id"/>-->
+<!--                        <field name="teacher_name"/>-->
+<!--                        <field name="teacher_family_name"/>-->
+
+
+
                         <button string="Report" type="object" name="action_generate_report"
                                 class="btn-primary"/></group>
+                          <field name="chart_upload" widget="firstChart"/>
                 </form>
             </field>
 
@@ -46,7 +49,7 @@
 
         <menuitem id="menu_teach_example_main"
                   name="Student"
-                  parent="menu_your_model_main"
+                  parent="menu_teacher"
                   action="action_teach_example_model"
                   sequence="10"/>
 

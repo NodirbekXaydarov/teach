@@ -47,6 +47,6 @@
                 </p>
             </field>
         </record>
-        <menuitem id="menu_your_model_main" name="Teacher" action="action_teacher_model" sequence="10"/>
+        <menuitem id="menu_teacher" name="Teacher" action="action_teacher_model" sequence="10"/>
     </data>
 </odoo>
