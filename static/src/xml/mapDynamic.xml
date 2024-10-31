@@ -1,0 +1,41 @@
+<templates id="template" xml:space="preserve">
+    <t t-name="teach.MapDynamic">
+        <div>
+    <div style="width: 500px" t-ref="root">
+      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <filter id="text-bg" x="-50%" y="-50%" width="200%" height="200%">
+            <feFlood flood-color="white" flood-opacity="0.7"/>
+                <feComposite in="SourceGraphic" operator="over"/>
+          </filter>
+        </defs>
+
+          <g clip-path="url(#clip0_21_3)">
+              <t t-foreach="regions" t-as="region" t-key="region.id">
+         <path
+                 t-att-d="region.path"
+                 t-att-fill="region.color"
+                 stroke="white"
+                 stroke-width="1.5"
+                 class="region"
+                 style="cursor: pointer"
+                 t-att-data-name="region.name"/>
+                 </t>
+              <g>
+            <rect x="93" y="93" width="20" height="10" class="title-background" rx="2" ry="2"></rect>
+                  <text x="100" y="100" class="shaxrisabz">3</text>
+                  <rect x="233" y="113" width="20" height="10" class="title-background" rx="2" ry="2"></rect>
+                  <text x="240" y="120" class="shaxrisabz">9</text>
+          </g>
+        </g>
+
+
+      </svg>
+        <div id="info-box" class="info-box"></div>
+    </div>
+
+
+
+        </div>
+    </t>
+</templates>

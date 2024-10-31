@@ -25,7 +25,7 @@
                         <!--                        <field name="teacher_id"/>-->
                         <!--                        <field name="teacher_name"/>-->
                         <!--                        <field name="teacher_family_name"/>-->
-                        <field name="gender" widget="gender_radio"/>
+<!--                        <field name="gender" widget="gender_radio"/>-->
 
 
                         <button string="Report" type="object" name="action_generate_report"
@@ -43,9 +43,8 @@
                         <group colspan="3">
                             <field name="map_chart" widget="MapChart"/>
                         </group>
-
-
                     </group>
+                    <field name="map_chart" widget="MapDynamic"/>
 
 
                 </form>
