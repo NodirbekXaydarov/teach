@@ -30,11 +30,23 @@
 
                         <button string="Report" type="object" name="action_generate_report"
                                 class="btn-primary"/>
-<!--                                                <field name="chart_upload" widget="firstChart"/>-->
-<!--                                                <field name="chart_upload" widget="Secondchart"/>-->
+
 
                     </group>
-                    <field name="map_chart" widget="MapChart"/>
+                    <group colspan="12" col="12">
+                        <group colspan="3">
+                            <field name="chart_upload" widget="firstChart"/>
+                        </group>
+                        <group colspan="3">
+                            <field name="chart_upload" widget="Secondchart"/>
+                        </group>
+                        <group colspan="3">
+                            <field name="map_chart" widget="MapChart"/>
+                        </group>
+
+
+                    </group>
+
 
                 </form>
             </field>
