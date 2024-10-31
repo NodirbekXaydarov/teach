@@ -22,15 +22,20 @@
                         <field name="name_student"/>
                         <field name="img_upload" widget="avatar_img_upload"/>
                         <field name="family_name_student"/>
-<!--                        <field name="teacher_id"/>-->
-<!--                        <field name="teacher_name"/>-->
-<!--                        <field name="teacher_family_name"/>-->
-
+                        <!--                        <field name="teacher_id"/>-->
+                        <!--                        <field name="teacher_name"/>-->
+                        <!--                        <field name="teacher_family_name"/>-->
+                        <field name="gender" widget="gender_radio"/>
 
 
                         <button string="Report" type="object" name="action_generate_report"
-                                class="btn-primary"/></group>
-                          <field name="chart_upload" widget="firstChart"/>
+                                class="btn-primary"/>
+<!--                                                <field name="chart_upload" widget="firstChart"/>-->
+<!--                                                <field name="chart_upload" widget="Secondchart"/>-->
+
+                    </group>
+                    <field name="map_chart" widget="MapChart"/>
+
                 </form>
             </field>
 
