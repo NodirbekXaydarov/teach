@@ -20,7 +20,5 @@ class Student(models.Model):
     ], string='Gender')
     img_upload = fields.Binary(string='Image Upload')
     file_upload = fields.Json(string='File Upload', default=[])
-    chart_upload = fields.Char(string='Chart Upload')
-    map_chart = fields.Char(string='Map Chart')
     def action_generate_report(self):
         return self.env.ref('teach.property_report').report_action(self)

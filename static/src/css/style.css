@@ -1,4 +1,4 @@
-:focus {
+/*:focus {
     outline: 0;
     border-color: #2260ff;
     box-shadow: 0 0 0 4px #b5c9fc;
@@ -143,7 +143,7 @@ label:last-child span {
     overflow: hidden;
     transition: opacity 0.3s ease, transform 0.3s ease;
     opacity: 0;
-    transform: translateX(-100%); /* Slide out to the left */
+    transform: translateX(-100%); !* Slide out to the left *!
     position: absolute;
 
 }
@@ -157,7 +157,7 @@ label:last-child span {
 
 .o_web_client_wrapper {
     transition: width 0.3s ease;
-}
+}*/
 
 
 

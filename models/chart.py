@@ -5,3 +5,5 @@ class Chart(models.Model):
     _description = 'Chart for teach'  # Corrected description if needed
 
     chart = fields.Char(string='Student Name')
+    chart_upload = fields.Char(string=' ')
+    map_chart = fields.Char(string='Map Chart')

@@ -1,41 +1,66 @@
 <odoo>
     <data>
-        <record id="view_chart_tree" model="ir.ui.view">
-            <field name="name">Chart.tree</field>
-            <field name="model">chart</field>
-            <field name="arch" type="xml">
-                <tree string="Student example Tree View">
-                    <field name="chart"/>
-                </tree>
-            </field>
-        </record>
-
         <record id="view_chart_form" model="ir.ui.view">
-            <field name="name">Chart.form</field>
+            <field name="name">Chart Form View</field>
             <field name="model">chart</field>
             <field name="arch" type="xml">
-                <form string="Student Form View">
+                <form string="Statistics Form" create="false" edit="false">
                     <group>
-                        <field name="chart"/>
+                        <group colspan="12" col="12">
+                            <group colspan="4">
+                                <field name="chart_upload" widget="firstChart"/>
+                            </group>
+                            <group colspan="4">
+                                <field name="chart_upload" widget="BarChart"/>
+                            </group>
+                            <group colspan="4">
+                                <!--                                <field name="map_chart" widget="MapChart"/>-->
+                                <field name="map_chart" widget="MapDynamic"/>
+                            </group>
+                        </group>
+                        <group col="12" colspan="12">
+                            <group colspan="6">
+                                <field name="chart_upload" widget="AgeChart"/>
+                            </group>
+                            <group colspan="6">
+                                <field name="chart_upload" widget="BarDisease"/>
+                            </group>
+                        </group>
+
+                        <group col="12" colspan="12">
+                            <group colspan="6">
+                                <field name="chart_upload" widget="RadarChart"/>
+                            </group>
+                            <group colspan="6">
+                                <field name="chart_upload" widget="PieChart"/>
+                            </group>
+                        </group>
+
+                        <group col="12" colspan="12">
+                            <group colspan="6">
+                                <field name="chart_upload" widget="LineGraph"/>
+                            </group>
+                        </group>
+
+
                     </group>
                 </form>
             </field>
         </record>
 
         <record id="action_chart" model="ir.actions.act_window">
-            <field name="name">Chart example</field>
+            <field name="name">Statistics View</field>
             <field name="res_model">chart</field>
-            <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="view_chart_tree"/>
+            <field name="view_mode">form</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">
-                    Yangi ma'lumotlar qo'shish uchun "Yangi" tugmasini bosing.
+                    Bu forma faqat statistik ma'lumotlarni ko'rsatish uchun ishlatiladi.
                 </p>
             </field>
         </record>
 
         <menuitem id="menu_chart_main"
-                  name="Chart"
+                  name="Statistics"
                   parent="menu_teacher"
                   action="action_chart"
                   sequence="10"/>
